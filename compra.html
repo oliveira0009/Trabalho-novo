@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual - Compra</title>
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">LojaVirtual</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#categorias">Categorias</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="compra" id="compra">
+        <h2>Confirmação de Compra</h2>
+        <div class="produto-detalhe">
+            <form action="confirmacao.html" method="POST">
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" value="1" min="1">
+                <label for="endereco">Endereço de Entrega:</label>
+                <textarea id="endereco" name="endereco" required></textarea>
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="pix">PIX</option>
+                </select>
+                <button type="submit" class="btn">Finalizar Compra</button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <p>&copy; 2024 LojaVirtual. Todos os direitos reservados.</p>
+        <p>Email: contato@lojavirtual.com | Telefone: (11) 1234-5678</p>
+    </footer>
+</body>
+</html>
